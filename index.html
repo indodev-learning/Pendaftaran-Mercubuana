@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendaftaran Mercubuana</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css"> <!-- Bootstrap CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/app.css"> <!-- Custom CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css"> <!-- FA CSS -->
+	<link rel="stylesheet" type="text/css" href="assets/css/responsiveslides.css"> <!-- FA CSS -->
+
+	<!-- Javascript -->
+	<script type="text/javascript" src="assets/js/jquery.min.js"></script> <!-- jQuery -->
+	<script type="text/javascript" src="assets/js/bootstrap.min.js"></script> <!-- Bootstrap JS -->
+	<script type="text/javascript" src="assets/js/angular.min.js"></script> <!-- Angular JS -->
+	<script type="text/javascript" src="assets/js/angular-route.min.js"></script> <!-- Angular Route -->
+	<script type="text/javascript" src="assets/js/angular-resource.min.js"></script> <!-- Angular Route -->
+	<script type="text/javascript" src="assets/js/app.js"></script> <!-- Angular App -->
+	<script type="text/javascript" src="assets/js/menu.js"></script> 
+	
+	<script type="text/javascript" src="assets/js/responsiveslides.min.js"></script>
+
+</head>
+<body ng-app="PendaftaranMercubuana">
+	<header>
+		<div class="top">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-4 col-md-5 col-sm-5 ">
+						<div class="logos">
+							<div class="header-logo">
+								<img src="assets/img/logo.jpg" alt="SBMPTN">
+							</div>
+							<div class="title-logo">
+								<span>Pendaftaran</span>
+								<p><b>Universitas Mercubuana</b></p>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-8 col-md-7 col-sm-7">
+						<form class="form-top">
+			                <input type="text" style="border-radius: 6px 0 0 6px" class="input" ng-model="name" placeholder="Cari program studi">
+			                <input type="button" class="search-btn fa-search">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav id="cssmenu">
+			<div class="logo display-none" style="color: #fff">
+				Menu
+			</div>
+			<div id="head-mobile"></div>
+			<div class="button"></div>
+			<ul>
+				<li>
+					<form class="form-hidden">
+		                <input type="text" style="border-radius: 6px 0 0 6px" class="input" ng-model="name" placeholder="Cari program studi">
+		                <input type="button" class="search-btn fa-search">
+					</form>
+				</li>
+				<li class="active"><a href="#!/formulir-pendaftaran">HOME</a></li>
+				<li><a href="#!/pendaftaran-s1">PENDAFTARAN</a>
+				   <ul>
+				      <li><a href="#!/pendaftaran-s1">Reguler S1</a></li>
+				      <li><a href="#!/pendaftaran-syarat">Syarat Pendaftaran</a></li>
+				      <li><a href="views/pendaftaran/formulir_pendaftaran.html">Form Pendaftaran</a></li>
+				   </ul>
+				</li>
+				<li><a href="#!/pendaftaran-s1">PROGRAM STUDI</a>
+				   <ul>
+				      <li><a href="#!/formulir-pendaftaran">D3</a></li>
+				      <li><a href="#!/pendaftaran-s1">S1</a></li>
+				      <li><a href="#!/pendaftaran-s1">S2</a></li>
+				      <li><a href="#!/pendaftaran-s1">S3</a></li>
+				   </ul>
+				</li>
+				<li><a href="#!/pendaftaran-syarat">BEASISWA</a>
+				   <ul>
+				      <li><a href="#!/pendaftaran-syarat">Tes Beasiswa</a></li>
+				   </ul>
+				</li>
+				<li><a href="#!/formulir-pendaftaran">DOWNLOAD</a>
+				   <ul>
+				      <li><a href="#!/pendaftaran-syarat">Pengumuman</a></li>
+				      <li><a href="#!/pendaftaran-syarat">Brosur </a>
+				         <ul>
+				            <li><a href="#!/pendaftaran-syarat">Brosur S1</a></li>
+				            <li><a href="#!/pendaftaran-syarat">Brosur S2</a></li>
+				         </ul>
+				      </li>
+				      <li><a href="#!/pendaftaran-syarat">Tabel Biaya</a></li>
+				   </ul>
+				</li>
+			</ul>
+		</nav>
+	</header>
+
+	<ng-view>
+	
+	</ng-view>
+
+	<footer>
+	  <div class="container">
+	    <div class="row">
+
+	        <div class="col col-sm-3 foot">
+	            <h5><b>Kampus Meruya</b></h5>
+	            <p>Jl. Meruya Selatan, Kembangan - Jakarta 11650 </br>
+	              Tel : 021 586 1779</br>
+	              Phone : 0851 006 333 60</br>
+	              Email : pmb@mercubuana.ac.id</p>
+	        </div>      
+			<div class="col col-sm-3 foot">
+	            <h5><b>Kampus Bekasi</b></h5>
+	            <p>Jl. Raya Keranggan No. 6 Jatisampurna Bekasi</br>
+	              Tel : 021-8449635</br>
+	              Phone : 0811 8183 994</p>
+	        </div>
+	        <div class="col col-sm-3 foot">
+	            <h5><b>Useful Links</b></h5>
+	            <p><a href="#">Universitas Mercu Buana</a></br>
+	              <a href="#">Biro Administrasi Akademik</a></br>
+	              <a href="#">International Program</a></br>
+	              <a href="#">E-Learning</a></br>
+	              <a href="#">UMB Career & Training Centre</a></br>
+	              <a href="#">Digital Library</a></p>
+	        </div>
+	        <div class="col col-sm-3 foot">
+	            <h5><b>Website Fakultas</b></h5>
+	            <p><a href="#">Fakultas Desain dan Seni Kreatif</a></br>
+	              <a href="#">Fakultas Teknik</a></br>
+	              <a href="#">Fakultas Ekonomi dan Bisnis</a></br>
+	              <a href="#">Fakultas Ilmu Komunikasi</a></br>
+	              <a href="#">Fakultas Ilmu Komputer</a></br>
+	              <a href="#">Fakultas Psikologi</a></br>
+	              <a href="#">Pasca Sarjana</a></p>
+
+	        </div>
+	    </div>
+	  </div>
+	</footer>
+</body>
+
+	
+</html>
